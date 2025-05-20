@@ -2,182 +2,202 @@ import subprocess
 import time
 import pyautogui
 import os
-import cv2
-import numpy as np
 import sys
 import pygetwindow as gw
 import pyperclip
 import threading
+import argparse
+import yaml
 
-def open_qfil(qfil_path):
-    try:
-        print(f"Opening QFIL software at: {qfil_path}")
-        subprocess.Popen(qfil_path, shell=True)
-    except FileNotFoundError:
-        print(f"Error: QFIL executable not found at {qfil_path}")
-    except Exception as e:
-        print(f"An error occurred while trying to open QFIL: {str(e)}")
 
-def locate_with_opencv(template_path, confidence=0.8):
-    screenshot = pyautogui.screenshot()
-    screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2GRAY)
+# === Configuration ===
+QFIL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../utils/QFIL/Qualcomm_Flash_Image_Loader_v2.0.3.5/Qualcomm_Flash_Image_Loader_v2.0.3.5/QFIL.exe"))
+WINDOW_TITLE_KEYWORDS = ("QFIL",)
+NEW_WINDOW_POSITION = (423, 125)
+NEW_WINDOW_SIZE = (1000, 750)
+PROGRESS_PIXEL = (1402, 619)
+CLICK_POSITIONS = {
+    "select_port": (495, 280),
+    "firehose_btn": (1306, 356),
+    "rawprogram_btn": (1320, 550),
+    "patch_btn": (1315, 590),
+}
+FILE_PATHS = {
+    "firehose": r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\prog_firehose_ddr.elf",
+    "rawprogram": r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml",
+    "patch": r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\patch0.xml",
+}
 
-    template = cv2.imread(template_path, cv2.IMREAD_UNCHANGED)
-    if template is None:
-        print(f"Error: Could not load template image from {template_path}")
-        return None
+# === Utility Functions ===
 
-    if len(template.shape) == 3:
-        template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+def paste_file_path(filepath):
+    pyperclip.copy(filepath)
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.press('enter')
+    print(f"Pasted: {filepath}")
 
-    result = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
-    min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+def launch_qfil():
+    if os.path.exists(QFIL_PATH):
+        print(f"Launching QFIL: {QFIL_PATH}")
+        os.startfile(QFIL_PATH)
+    else:
+        print(f"Error: QFIL not found at {QFIL_PATH}")
+        sys.exit(1)
 
-    if max_val >= confidence:
-        template_height, template_width = template.shape[:2]
-        center_x = max_loc[0] + template_width // 2
-        center_y = max_loc[1] + template_height // 2
-        return center_x, center_y
-    return None
-
-def click_buttons_and_configure():
-    try:
-        time.sleep(3)
-
-        # 使用绝对坐标点击z:\projects\auto_project\software\..\download\downloads\RELEASE_IMAGES\RELEASE_IMAGES\2025-04-28_21_25\prog_firehose_ddr.elf
-        positions = [(495, 280), (1306, 356), (1320, 550),(1315, 590)]
-
-        pyautogui.click(positions[0])
-        print("Clicked on button 1 at (450, 300)")
-
-        pyautogui.click(positions[1])
-        print("Clicked on button 2 at (1450, 360)")
-
-        time.sleep(2)
-        if hasattr(sys, '_MEIPASS'):
-            base_dir = sys._MEIPASS
-        else:
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\prog_firehose_ddr.elf"
-        pyperclip.copy(file_path)
-        pyautogui.hotkey('ctrl', 'v')
-        print(f"Pasted file path: {file_path}")
-        pyautogui.press('enter')
-
-        time.sleep(2)
-        pyautogui.click(positions[2])
-        print("Clicked on button 3 at (1450, 600)")
-
-        time.sleep(2)
-        file_path = r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml"
-        pyperclip.copy(file_path)
-        pyautogui.hotkey('ctrl', 'v')
-        print(f"Pasted file path: {file_path}")
-        pyautogui.press('enter')
-
-        time.sleep(2)
-        file_path = r"C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\patch0.xml"
-        pyperclip.copy(file_path)
-        pyautogui.hotkey('ctrl', 'v')
-        print(f"Pasted file path: {file_path}")
-        pyautogui.press('enter')
-
-        time.sleep(2)
-        pyautogui.click(positions[3])
-
-        time.sleep(2)
-        print("QFIL configuration completed.")
-
-    except Exception as e:
-        print(f"An error occurred in click_buttons_and_configure: {e}")
-
-def wait_for_qfil_window(window_title_keywords=("Qualcomm", "Flash Image Loader"), timeout=20):
-    min_width, min_height = 500, 300
+def wait_for_qfil_window(keywords=WINDOW_TITLE_KEYWORDS, timeout=20):
+    print("Waiting for QFIL window...")
     existing_ids = set(w._hWnd for w in gw.getAllWindows())
     for _ in range(timeout * 2):
         for w in gw.getAllWindows():
             if w._hWnd not in existing_ids:
-                print(f"新窗口: {w.title}, 大小=({w.width},{w.height})")
-                if (any(keyword.lower() in w.title.lower() for keyword in window_title_keywords)
-                    and w.width > min_width and w.height > min_height):
+                if any(kw.lower() in w.title.lower() for kw in keywords) and w.width > 500 and w.height > 300:
+                    print(f"Found QFIL window: {w.title}")
                     return w
         time.sleep(0.5)
+    print("Error: QFIL window not found.")
     return None
 
-def monitor_new_windows(position=(423, 125), size=(1000, 750), poll_interval=0.5):
-    print("后台窗口监控已启动...")
+def monitor_new_windows(position=NEW_WINDOW_POSITION, size=NEW_WINDOW_SIZE):
+    print("Window monitor started.")
     known_windows = set(w._hWnd for w in gw.getAllWindows())
     while True:
-        current_windows = gw.getAllWindows()
-        for win in current_windows:
+        for win in gw.getAllWindows():
             if win._hWnd not in known_windows:
+                print(f"[Monitor] New window: {win.title}")
                 try:
-                    print(f"[监控] 新窗口: {win.title}")
                     win.moveTo(*position)
                     win.resizeTo(*size)
-                    print(f"[监控] 已调整窗口位置到 {position}，大小为 {size}")
+                    print(f"[Monitor] Resized to {size} at {position}")
                 except Exception as e:
-                    print(f"[监控] 调整窗口失败: {e}")
+                    print(f"[Monitor] Resize failed: {e}")
                 known_windows.add(win._hWnd)
-        time.sleep(poll_interval)
+        time.sleep(0.5)
 
-def check_progress_bar():
+def configure_qfil():
     try:
-        # 指定要监测的像素点坐标
-        target_x = 1402
-        target_y = 619
-        
-        print("开始监控进度条...")
-        initial_color = None
-        
-        while True:
-            # 获取指定像素点的颜色
-            screenshot = pyautogui.screenshot(region=(target_x, target_y, 1, 1))
-            current_color = screenshot.getpixel((0, 0))  # 返回RGB颜色值
-            
-            # 第一次循环，记录初始颜色
-            if initial_color is None:
-                initial_color = current_color
-                print(f"初始颜色值: RGB{initial_color}")
-                continue
-            
-            # 检查颜色是否发生变化
-            if current_color != initial_color:
-                print(f"检测到颜色变化:")
-                print(f"初始颜色: RGB{initial_color}")
-                print(f"当前颜色: RGB{current_color}")
-                print("进度条完成！")
-                break
-            
-            time.sleep(0.5)
-            
+        print("Starting QFIL configuration...")
+        time.sleep(3)
+
+        pyautogui.click(CLICK_POSITIONS["select_port"])
+        print("Clicked: Select Port")
+
+        pyautogui.click(CLICK_POSITIONS["firehose_btn"])
+        print("Clicked: Firehose Button")
+        time.sleep(1)
+        paste_file_path(FILE_PATHS["firehose"])
+
+        time.sleep(1)
+        pyautogui.click(CLICK_POSITIONS["rawprogram_btn"])
+        print("Clicked: Rawprogram Button")
+        time.sleep(1)
+        paste_file_path(FILE_PATHS["rawprogram"])
+
+        time.sleep(1)
+        paste_file_path(FILE_PATHS["patch"])
+
+        time.sleep(1)
+        pyautogui.click(CLICK_POSITIONS["patch_btn"])
+        print("Clicked: Final Confirm Button")
+
+        print("QFIL configuration complete.")
+
     except Exception as e:
-        print(f"检测进度条时出错: {e}")
+        print(f"Error during QFIL configuration: {e}")
+
+def monitor_progress_bar(pixel=PROGRESS_PIXEL):
+    try:
+        print("Monitoring progress bar...")
+        x, y = pixel
+        initial_color = None
+        while True:
+            screenshot = pyautogui.screenshot(region=(x, y, 1, 1))
+            color = screenshot.getpixel((0, 0))
+            if initial_color is None:
+                initial_color = color
+                print(f"Initial pixel color: RGB{color}")
+                continue
+            if color != initial_color:
+                print(f"Progress bar color changed: {initial_color} -> {color}")
+                print("Flashing likely complete.")
+                break
+            time.sleep(0.5)
+    except Exception as e:
+        print(f"Error monitoring progress bar: {e}")
+
+def load_config(config_file='config.yaml', profile='default'):
+    """加载配置文件"""
+    try:
+        with open(config_file, 'r', encoding='utf-8') as f:
+            config = yaml.safe_load(f)
         
-# 在主程序最后添加:
-if __name__ == "__main__":
-    if hasattr(sys, '_MEIPASS'):
-        base_dir = sys._MEIPASS
-    else:
-        base_dir = os.path.dirname(os.path.abspath(__file__))
+        # 合并基础配置和文件配置
+        result = {
+            'qfil': config['qfil'],
+            'files': config['files'][profile]
+        }
+        return result
+    except Exception as e:
+        print(f"Error loading config: {e}")
+        sys.exit(1)
 
-    # 启动后台线程，监控新窗口
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='QFIL Flashing Tool Controller')
+    parser.add_argument('--config', 
+                       default='config.yaml',
+                       help='Path to config file')
+    parser.add_argument('--profile',
+                       default='default',
+                       help='Configuration profile to use')
+    parser.add_argument('--list-profiles',
+                       action='store_true',
+                       help='List available profiles in config file')
+    return parser.parse_args()
+
+def list_available_profiles(config_file):
+    """列出配置文件中的所有配置集"""
+    with open(config_file, 'r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+    print("\nAvailable profiles:")
+    for profile in config['files'].keys():
+        print(f"- {profile}")
+
+# === Main Program ===
+
+def main():
+    args = parse_arguments()
+    
+    if args.list_profiles:
+        list_available_profiles(args.config)
+        return
+
+    # 加载配置
+    config = load_config(args.config, args.profile)
+    
+    # 验证文件是否存在
+    for key, path in config['files'].items():
+        if not os.path.exists(path):
+            print(f"Error: {key} file not found: {path}")
+            sys.exit(1)
+    
+    # 更新全局常量
+    global QFIL_PATH, WINDOW_TITLE_KEYWORDS, NEW_WINDOW_POSITION, NEW_WINDOW_SIZE, PROGRESS_PIXEL, CLICK_POSITIONS, FILE_PATHS
+    
+    QFIL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), config['qfil']['path']))
+    WINDOW_TITLE_KEYWORDS = tuple(config['qfil']['window']['title_keywords'])
+    NEW_WINDOW_POSITION = tuple(config['qfil']['window']['position'])
+    NEW_WINDOW_SIZE = tuple(config['qfil']['window']['size'])
+    PROGRESS_PIXEL = tuple(config['qfil']['progress_pixel'])
+    CLICK_POSITIONS = config['qfil']['click_positions']
+    FILE_PATHS = config['files']
+
+    # 启动主程序
     threading.Thread(target=monitor_new_windows, daemon=True).start()
+    launch_qfil()
+    qfil_win = wait_for_qfil_window()
+    if qfil_win:
+        print(f"QFIL window ready: {qfil_win.title}")
+    configure_qfil()
+    monitor_progress_bar()
 
-    # 修改 QFIL 路径 - 使用相对路径
-    qfil_path = r"C:\Program Files (x86)\Qualcomm\QPST\bin\QFIL.exe"
-    print(f"QFIL Path: {qfil_path}")
-
-    if os.path.exists(qfil_path):
-        os.startfile(qfil_path)
-    else:
-        print(f"Error: QFIL.exe not found at {qfil_path}")
-
-    qfil_window = wait_for_qfil_window(("QFIL",))
-    if qfil_window:
-        print(f"找到QFIL窗口: {qfil_window.title}, 位置=({qfil_window.left},{qfil_window.top}), 大小=({qfil_window.width},{qfil_window.height})")
-    else:
-        print("未找到QFIL窗口")
-
-    click_buttons_and_configure()
-    check_progress_bar()
+if __name__ == "__main__":
+    main()
