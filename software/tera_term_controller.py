@@ -41,7 +41,7 @@ def wait_for_fastboot_prompt(ser):
     start_time = time.time()
     buffer = ""
     last_boot_time = 0
-    no_data_warning_issued = False  # 控制提示只出现一次
+    no_data_warning_issued = False
 
     print("[INFO] Waiting for device reboot...")
 
@@ -66,7 +66,7 @@ def wait_for_fastboot_prompt(ser):
                 if chunk:
                     print(f"[LOG] {chunk}", end='')
                     buffer += chunk
-                    no_data_warning_issued = False  # 重置标志
+                    no_data_warning_issued = False 
 
                     if any(indicator in buffer for indicator in BOOT_INDICATORS):
                         if current_time - last_boot_time > 5:
