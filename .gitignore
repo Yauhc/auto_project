@@ -14,3 +14,4 @@ venv/
 # Python 缓存
 __pycache__/
 *.pyc
+utils/RELEASE_IMAGES/
