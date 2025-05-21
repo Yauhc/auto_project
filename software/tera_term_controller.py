@@ -39,10 +39,11 @@ def wait_for_fastboot_prompt(ser):
     ser.reset_input_buffer()
     ser.reset_output_buffer()
 
-    total_timeout = 60  
+    total_timeout = 60
     start_time = time.time()
     buffer = ""
     last_boot_time = 0
+    no_data_warning_issued = False  # 控制提示只出现一次
 
     print("[INFO] Waiting for device reboot...")
 
@@ -67,6 +68,7 @@ def wait_for_fastboot_prompt(ser):
                 if chunk:
                     print(f"[LOG] {chunk}", end='')
                     buffer += chunk
+                    no_data_warning_issued = False  # 重置标志
 
                     if any(indicator in buffer for indicator in BOOT_INDICATORS):
                         if current_time - last_boot_time > 5:
@@ -90,8 +92,9 @@ def wait_for_fastboot_prompt(ser):
                         time.sleep(2)
                         return True
             else:
-                if (time.time() - last_boot_time) > 15:
-                    print("[WARN] No data received from serial for 15 seconds.")
+                if not no_data_warning_issued and (time.time() - last_boot_time) > 15:
+                    print("[WARN] Please set the device to normal mode and power cycle it.")
+                    no_data_warning_issued = True
 
             time.sleep(0.01)
     except serial.SerialException as e:
