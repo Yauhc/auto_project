@@ -1,0 +1,1946 @@
+
+15:04:38: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+C:\Program Files (x86)\Qualcomm\QPST\bin\fh_loader.exe --port=\\.\COM44 --sendxml=rawprogram0.xml --search_path=C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor --noprompt --showpercentagecomplete --memoryname=spinor --zlpawarehost=1 
+************************************************
+
+15:04:38: DEBUG: Binary build date: Jun 25 2019 @ 03:16:10
+
+15:04:38: DEBUG: Build Version: 19.06.25.03.16.10
+
+15:04:38: INFO: Current working dir (cwd): C:\Users\CHP00015\Desktop\auto_flash\auto_project\
+15:04:38: INFO: Showing network mappings to allow debugging
+15:04:44: DEBUG: New connections will be remembered.
+
+15:04:44: DEBUG: 
+
+15:04:44: DEBUG: 
+
+15:04:44: DEBUG: Status       Local     Remote                    Network
+
+15:04:44: DEBUG: 
+
+15:04:44: DEBUG: -------------------------------------------------------------------------------
+
+15:04:44: DEBUG: Reconnecting Z:        \\Server-T800\Office      Microsoft Windows Network
+
+15:04:44: DEBUG: The command completed successfully.
+
+15:04:44: DEBUG: 
+
+15:04:44: INFO: 
+
+
+
+15:04:44: INFO: Trying to store 'rawprogram0.xml' in string table
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'rawprogram0.xml'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml' (10248 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml') with AccessMode='r'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: User set ZLPAWAREHOST to 1
+
+15:04:44: INFO: User wants to talk to port '\\.\COM44'
+15:04:44: DEBUG: port_fd=0x224
+
+15:04:44: INFO: Took       0.00000000 seconds to open port
+15:04:44: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sail_nor_dlp.bin'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin' (128 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailhyp.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf' (758208 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw1.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf' (444608 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw2.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf' (430592 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw3.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf' (550464 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailhyp.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf' (758208 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw1.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf' (444608 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw2.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf' (430592 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailsw3.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf' (550464 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sail_nor_dlp.bin'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin' (128 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'gpt_main0.bin'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin' (24576 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'gpt_backup0.bin'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin' (20480 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: INFO: 
+
+Total to be tansferd with <program> or <read> is 4.21 MB
+
+
+15:04:44: INFO: Sending <configure>
+15:04:44: DEBUG: CHANNEL DATA (P0000) (H00202) (    230 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<configure MemoryName="spinor" Verbose="0" AlwaysValidate="0" MaxDigestTableSizeInBytes="8192" MaxPayloadSizeToTargetInBytes="1048576" ZlpAwareHost="1" SkipStorageInit="0" />
+</data>
+
+============================================================================================================
+
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (117 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 117
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 117 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 42 69 6E 61 72 79 20 62 75 69 6C 64 20 64 61  Binary build da
+15:04:44: DEBUG: printBuffer:6094 74 65 3A 20 41 70 72 20 32 38 20 32 30 32 35 20 te: Apr 28 2025 
+15:04:44: DEBUG: printBuffer:6094 40 20 32 31 3A 30 38 3A 30 35 22 20 2F 3E 3C 2F @ 21:08:05" /></
+15:04:44: DEBUG: printBuffer:6094 64 61 74 61 3E                                  data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (117 bytes): CharsInBuffer=117-117=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Binary build date: Apr 28 2025 @ 21:08:05" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Binary build date: Apr 28 2025 @ 21:08:05'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (118 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 118
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 118 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 42 69 6E 61 72 79 20 62 75 69 6C 64 20 64 61  Binary build da
+15:04:44: DEBUG: printBuffer:6094 74 65 3A 20 41 70 72 20 32 38 20 32 30 32 35 20 te: Apr 28 2025 
+15:04:44: DEBUG: printBuffer:6094 40 20 32 31 3A 30 38 3A 30 35 0A 22 20 2F 3E 3C @ 21:08:05." /><
+15:04:44: DEBUG: printBuffer:6094 2F 64 61 74 61 3E                               /data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (118 bytes): CharsInBuffer=118-118=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Binary build date: Apr 28 2025 @ 21:08:05
+" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Binary build date: Apr 28 2025 @ 21:08:05
+'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (116 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 116
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 116 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 43 68 69 70 20 73 65 72 69 61 6C 20 6E 75 6D  Chip serial num
+15:04:44: DEBUG: printBuffer:6094 3A 20 31 31 38 30 32 32 33 36 33 35 20 28 30 78 : 1180223635 (0x
+15:04:44: DEBUG: printBuffer:6094 34 36 35 38 63 38 39 33 29 22 20 2F 3E 3C 2F 64 4658c893)" /></d
+15:04:44: DEBUG: printBuffer:6094 61 74 61 3E                                     ata>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (116 bytes): CharsInBuffer=116-116=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Chip serial num: 1180223635 (0x4658c893)" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Chip serial num: 1180223635 (0x4658c893)'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (101 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 101
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 101 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 53 75 70 70 6F 72 74 65 64 20 46 75 6E 63 74  Supported Funct
+15:04:44: DEBUG: printBuffer:6094 69 6F 6E 73 20 28 31 35 29 3A 22 20 2F 3E 3C 2F ions (15):" /></
+15:04:44: DEBUG: printBuffer:6094 64 61 74 61 3E                                  data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (101 bytes): CharsInBuffer=101-101=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Supported Functions (15):" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Supported Functions (15):'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (83 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 83
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 83 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 70 72 6F 67 72 61 6D 22 20 2F 3E 3C 2F 64 61  program" /></da
+15:04:44: DEBUG: printBuffer:6094 74 61 3E                                        ta>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (83 bytes): CharsInBuffer=83-83=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: program'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (80 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 80
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 80 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 72 65 61 64 22 20 2F 3E 3C 2F 64 61 74 61 3E  read" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (80 bytes): CharsInBuffer=80-80=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: read" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: read'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (79 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 79
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 79 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 6E 6F 70 22 20 2F 3E 3C 2F 64 61 74 61 3E     nop" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (79 bytes): CharsInBuffer=79-79=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: nop" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: nop'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (81 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 81
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 81 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 70 61 74 63 68 22 20 2F 3E 3C 2F 64 61 74 61  patch" /></data
+15:04:44: DEBUG: printBuffer:6094 3E                                              >
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (81 bytes): CharsInBuffer=81-81=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: patch" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: patch'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (85 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 85
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 85 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 63 6F 6E 66 69 67 75 72 65 22 20 2F 3E 3C 2F  configure" /></
+15:04:44: DEBUG: printBuffer:6094 64 61 74 61 3E                                  data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (85 bytes): CharsInBuffer=85-85=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: configure" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: configure'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (99 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 99
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 99 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 73 65 74 62 6F 6F 74 61 62 6C 65 73 74 6F 72  setbootablestor
+15:04:44: DEBUG: printBuffer:6094 61 67 65 64 72 69 76 65 22 20 2F 3E 3C 2F 64 61 agedrive" /></da
+15:04:44: DEBUG: printBuffer:6094 74 61 3E                                        ta>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (99 bytes): CharsInBuffer=99-99=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: setbootablestoragedrive" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: setbootablestoragedrive'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (81 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 81
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 81 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 65 72 61 73 65 22 20 2F 3E 3C 2F 64 61 74 61  erase" /></data
+15:04:44: DEBUG: printBuffer:6094 3E                                              >
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (81 bytes): CharsInBuffer=81-81=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: erase" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: erase'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (81 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 81
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 81 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 70 6F 77 65 72 22 20 2F 3E 3C 2F 64 61 74 61  power" /></data
+15:04:44: DEBUG: printBuffer:6094 3E                                              >
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (81 bytes): CharsInBuffer=81-81=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: power" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: power'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (89 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 89
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 89 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 66 69 72 6D 77 61 72 65 77 72 69 74 65 22 20  firmwarewrite" 
+15:04:44: DEBUG: printBuffer:6094 2F 3E 3C 2F 64 61 74 61 3E                      /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (89 bytes): CharsInBuffer=89-89=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: firmwarewrite" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: firmwarewrite'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (90 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 90
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 90 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 67 65 74 73 74 6F 72 61 67 65 69 6E 66 6F 22  getstorageinfo"
+15:04:44: DEBUG: printBuffer:6094 20 2F 3E 3C 2F 64 61 74 61 3E                    /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (90 bytes): CharsInBuffer=90-90=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: getstorageinfo" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: getstorageinfo'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (85 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 85
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 85 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 62 65 6E 63 68 6D 61 72 6B 22 20 2F 3E 3C 2F  benchmark" /></
+15:04:44: DEBUG: printBuffer:6094 64 61 74 61 3E                                  data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (85 bytes): CharsInBuffer=85-85=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: benchmark" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: benchmark'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (80 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 80
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 80 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 65 6D 6D 63 22 20 2F 3E 3C 2F 64 61 74 61 3E  emmc" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (80 bytes): CharsInBuffer=80-80=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: emmc" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: emmc'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (79 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 79
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 79 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 75 66 73 22 20 2F 3E 3C 2F 64 61 74 61 3E     ufs" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (79 bytes): CharsInBuffer=79-79=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: ufs" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: ufs'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (82 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 82
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 82 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 66 69 78 67 70 74 22 20 2F 3E 3C 2F 64 61 74  fixgpt" /></dat
+15:04:44: DEBUG: printBuffer:6094 61 3E                                           a>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (82 bytes): CharsInBuffer=82-82=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: fixgpt" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: fixgpt'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (91 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 91
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 91 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 67 65 74 73 68 61 32 35 36 64 69 67 65 73 74  getsha256digest
+15:04:44: DEBUG: printBuffer:6094 22 20 2F 3E 3C 2F 64 61 74 61 3E                " /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (91 bytes): CharsInBuffer=91-91=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: getsha256digest" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: getsha256digest'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (105 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 105
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 105 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 45 6E 64 20 6F 66 20 73 75 70 70 6F 72 74 65  End of supporte
+15:04:44: DEBUG: printBuffer:6094 64 20 66 75 6E 63 74 69 6F 6E 73 20 31 35 22 20 d functions 15" 
+15:04:44: DEBUG: printBuffer:6094 2F 3E 3C 2F 64 61 74 61 3E                      /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (105 bytes): CharsInBuffer=105-105=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: End of supported functions 15" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: End of supported functions 15'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (105 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 105
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 105 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:44: DEBUG: printBuffer:6094 20 66 6F 72 20 63 6F 6E 66 69 67 75 72 65 22 20  for configure" 
+15:04:44: DEBUG: printBuffer:6094 2F 3E 3C 2F 64 61 74 61 3E                      /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (105 bytes): CharsInBuffer=105-105=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for configure" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Calling handler for configure'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (108 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 108
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 108 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 53 74 6F 72 61 67 65 20 74 79 70 65 20 73 65  Storage type se
+15:04:44: DEBUG: printBuffer:6094 74 20 74 6F 20 76 61 6C 75 65 20 73 70 69 6E 6F t to value spino
+15:04:44: DEBUG: printBuffer:6094 72 22 20 2F 3E 3C 2F 64 61 74 61 3E             r" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (108 bytes): CharsInBuffer=108-108=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Storage type set to value spinor" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Storage type set to value spinor'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (282 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 282
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 282 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:44: DEBUG: printBuffer:6094 41 43 4B 22 20 4D 65 6D 6F 72 79 4E 61 6D 65 3D ACK" MemoryName=
+15:04:44: DEBUG: printBuffer:6094 22 73 70 69 6E 6F 72 22 20 4D 69 6E 56 65 72 73 "spinor" MinVers
+15:04:44: DEBUG: printBuffer:6094 69 6F 6E 53 75 70 70 6F 72 74 65 64 3D 22 31 22 ionSupported="1"
+15:04:44: DEBUG: printBuffer:6094 20 56 65 72 73 69 6F 6E 3D 22 31 22 20 4D 61 78  Version="1" Max
+15:04:44: DEBUG: printBuffer:6094 50 61 79 6C 6F 61 64 53 69 7A 65 54 6F 54 61 72 PayloadSizeToTar
+15:04:44: DEBUG: printBuffer:6094 67 65 74 49 6E 42 79 74 65 73 3D 22 31 30 34 38 getInBytes="1048
+15:04:44: DEBUG: printBuffer:6094 35 37 36 22 20 4D 61 78 50 61 79 6C 6F 61 64 53 576" MaxPayloadS
+15:04:44: DEBUG: printBuffer:6094 69 7A 65 54 6F 54 61 72 67 65 74 49 6E 42 79 74 izeToTargetInByt
+15:04:44: DEBUG: printBuffer:6094 65 73 53 75 70 70 6F 72 74 65 64 3D 22 31 30 34 esSupported="104
+15:04:44: DEBUG: printBuffer:6094 38 35 37 36 22 20 4D 61 78 58 4D 4C 53 69 7A 65 8576" MaxXMLSize
+15:04:44: DEBUG: printBuffer:6094 49 6E 42 79 74 65 73 3D 22 34 30 39 36 22 20 44 InBytes="4096" D
+15:04:44: DEBUG: printBuffer:6094 61 74 65 54 69 6D 65 3D 22 41 70 72 20 32 38 20 ateTime="Apr 28 
+15:04:44: DEBUG: printBuffer:6094 32 30 32 35 20 2D 20 32 31 3A 30 38 3A 30 35 22 2025 - 21:08:05"
+15:04:44: DEBUG: printBuffer:6094 20 2F 3E 3C 2F 64 61 74 61 3E                    /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (282 bytes): CharsInBuffer=282-282=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" MemoryName="spinor" MinVersionSupported="1" Version="1" MaxPayloadSizeToTargetInBytes="1048576" MaxPayloadSizeToTargetInBytesSupported="1048576" MaxXMLSizeInBytes="4096" DateTime="Apr 28 2025 - 21:08:05" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: DEBUG: Response was 'ACK'
+15:04:44: INFO: fh.attrs.MaxPayloadSizeToTargetInBytes = 1048576
+15:04:44: INFO: fh.attrs.MaxPayloadSizeToTargetInBytesSupported = 1048576
+15:04:44: DEBUG: Got the ACK for the <configure>
+15:04:44: INFO: In handleProgram('sail_nor_dlp.bin')
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sail_nor_dlp.bin'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin' (128 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: File size is 128 bytes
+15:04:44: DEBUG: NumSectors needed 1
+15:04:44: INFO: =======================================================
+15:04:44: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin'}
+15:04:44: INFO: {<program> (128.00 B) 1 sectors needed at location 6 on LUN 0}
+15:04:44: INFO: =======================================================
+
+15:04:44: DEBUG: CHANNEL DATA (P0001) (H00203) (    340 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sail_nor_dlp.bin" label="SAIL_DLP" num_partition_sectors="1" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="4.0" sparse="false" start_byte_hex="0x6000" start_sector="6" />
+</data>
+============================================================================================================
+
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 103
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:44: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:04:44: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 93
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:44: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:04:44: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: DEBUG: Response was 'ACK'
+15:04:44: DEBUG: CHANNEL DATA (P0002) (H00204) (4.00 KB) - HOST TO TARGET -->
+15:04:44: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 94
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:44: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:04:44: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: DEBUG: Response was 'ACK'
+15:04:44: INFO: 
+15:04:44: INFO: =======================================================
+15:04:44: INFO: ==================== {SUCCESS} ========================
+15:04:44: INFO: =======================================================
+
+
+15:04:44: INFO: {percent files transferred   0.00%}
+15:04:44: INFO: In handleProgram('sailhyp.elf')
+15:04:44: DEBUG: ==================================================================================
+15:04:44: DEBUG: ==================================================================================
+15:04:44: INFO: Looking for file 'sailhyp.elf'
+15:04:44: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf')
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf' (758208 bytes)
+15:04:44: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:04:44: DEBUG: Trying get filesize, calling fseek()
+15:04:44: DEBUG: File size is 758208 bytes
+15:04:44: DEBUG: NumSectors needed 186
+15:04:44: INFO: =======================================================
+15:04:44: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf'}
+15:04:44: INFO: {<program> (740.44 KB) 186 sectors needed at location 7 on LUN 0}
+15:04:44: INFO: =======================================================
+
+15:04:44: DEBUG: CHANNEL DATA (P0003) (H00205) (    339 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailhyp.elf" label="SAIL_HYP" num_partition_sectors="186" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="900.0" sparse="false" start_byte_hex="0x7000" start_sector="7" />
+</data>
+============================================================================================================
+
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 103
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:44: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:44: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:04:44: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:44: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:04:44: DEBUG: CharsInBuffer = 93
+15:04:44: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:04:44: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:44: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:44: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:44: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:44: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:04:44: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:04:44: DEBUG: printBuffer:6107 
+
+
+15:04:44: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:44: DEBUG: Response was 'ACK'
+15:04:44: DEBUG: CHANNEL DATA (P0004) (H00206) (744.00 KB) - HOST TO TARGET -->
+15:04:44: INFO: Overall to target  0.016 seconds (45.41 MBps)
+15:04:44: INFO: {percent files transferred  17.18%}
+15:04:44: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:50: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:04:50: DEBUG: CharsInBuffer = 94
+15:04:50: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:04:50: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:50: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:50: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:50: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:50: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:04:50: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:04:50: DEBUG: printBuffer:6107 
+
+
+15:04:50: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:50: DEBUG: Response was 'ACK'
+15:04:50: INFO: 
+15:04:50: INFO: =======================================================
+15:04:50: INFO: ==================== {SUCCESS} ========================
+15:04:50: INFO: =======================================================
+
+
+15:04:50: INFO: {percent files transferred  17.18%}
+15:04:50: INFO: In handleProgram('sailsw1.elf')
+15:04:50: DEBUG: ==================================================================================
+15:04:50: DEBUG: ==================================================================================
+15:04:50: INFO: Looking for file 'sailsw1.elf'
+15:04:50: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf')
+15:04:50: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:50: DEBUG: Trying get filesize, calling fseek()
+15:04:50: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf' (444608 bytes)
+15:04:50: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:04:50: DEBUG: Trying get filesize, calling fseek()
+15:04:50: DEBUG: File size is 444608 bytes
+15:04:50: DEBUG: NumSectors needed 109
+15:04:50: INFO: =======================================================
+15:04:50: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf'}
+15:04:50: INFO: {<program> (434.19 KB) 109 sectors needed at location 232 on LUN 0}
+15:04:50: INFO: =======================================================
+
+15:04:50: DEBUG: CHANNEL DATA (P0005) (H00207) (    343 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw1.elf" label="SAIL_SW1" num_partition_sectors="109" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0xe8000" start_sector="232" />
+</data>
+============================================================================================================
+
+15:04:50: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:50: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:04:50: DEBUG: CharsInBuffer = 103
+15:04:50: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:04:50: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:50: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:50: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:50: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:50: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:50: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:04:50: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:04:50: DEBUG: printBuffer:6107 
+
+
+15:04:50: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:50: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:04:50: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:50: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:04:50: DEBUG: CharsInBuffer = 93
+15:04:50: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:04:50: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:50: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:50: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:50: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:50: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:04:50: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:04:50: DEBUG: printBuffer:6107 
+
+
+15:04:50: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:50: DEBUG: Response was 'ACK'
+15:04:50: DEBUG: CHANNEL DATA (P0006) (H00208) (436.00 KB) - HOST TO TARGET -->
+15:04:50: INFO: Overall to target  0.031 seconds (13.73 MBps)
+15:04:50: INFO: {percent files transferred  27.26%}
+15:04:50: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:54: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:04:54: DEBUG: CharsInBuffer = 94
+15:04:54: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:04:54: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:54: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:54: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:54: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:54: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:04:54: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:04:54: DEBUG: printBuffer:6107 
+
+
+15:04:54: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:54: DEBUG: Response was 'ACK'
+15:04:54: INFO: 
+15:04:54: INFO: =======================================================
+15:04:54: INFO: ==================== {SUCCESS} ========================
+15:04:54: INFO: =======================================================
+
+
+15:04:54: INFO: {percent files transferred  27.26%}
+15:04:54: INFO: In handleProgram('sailsw2.elf')
+15:04:54: DEBUG: ==================================================================================
+15:04:54: DEBUG: ==================================================================================
+15:04:54: INFO: Looking for file 'sailsw2.elf'
+15:04:54: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf')
+15:04:54: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:54: DEBUG: Trying get filesize, calling fseek()
+15:04:54: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf' (430592 bytes)
+15:04:54: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:04:54: DEBUG: Trying get filesize, calling fseek()
+15:04:54: DEBUG: File size is 430592 bytes
+15:04:54: DEBUG: NumSectors needed 106
+15:04:54: INFO: =======================================================
+15:04:54: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf'}
+15:04:54: INFO: {<program> (420.50 KB) 106 sectors needed at location 488 on LUN 0}
+15:04:54: INFO: =======================================================
+
+15:04:54: DEBUG: CHANNEL DATA (P0007) (H00209) (    344 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw2.elf" label="SAIL_SW2" num_partition_sectors="106" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x1e8000" start_sector="488" />
+</data>
+============================================================================================================
+
+15:04:54: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:54: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:04:54: DEBUG: CharsInBuffer = 103
+15:04:54: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:04:54: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:54: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:54: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:54: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:54: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:54: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:04:54: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:04:54: DEBUG: printBuffer:6107 
+
+
+15:04:54: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:54: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:04:54: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:54: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:04:54: DEBUG: CharsInBuffer = 93
+15:04:54: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:04:54: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:54: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:54: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:54: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:54: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:04:54: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:04:54: DEBUG: printBuffer:6107 
+
+
+15:04:54: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:54: DEBUG: Response was 'ACK'
+15:04:54: DEBUG: CHANNEL DATA (P0008) (H00210) (424.00 KB) - HOST TO TARGET -->
+15:04:54: INFO: Overall to target  0.015 seconds (27.60 MBps)
+15:04:54: INFO: {percent files transferred  37.02%}
+15:04:54: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:57: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:04:57: DEBUG: CharsInBuffer = 94
+15:04:57: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:04:57: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:57: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:57: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:57: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:57: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:04:57: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:04:57: DEBUG: printBuffer:6107 
+
+
+15:04:57: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:57: DEBUG: Response was 'ACK'
+15:04:57: INFO: 
+15:04:57: INFO: =======================================================
+15:04:57: INFO: ==================== {SUCCESS} ========================
+15:04:57: INFO: =======================================================
+
+
+15:04:57: INFO: {percent files transferred  37.02%}
+15:04:57: INFO: In handleProgram('sailsw3.elf')
+15:04:57: DEBUG: ==================================================================================
+15:04:57: DEBUG: ==================================================================================
+15:04:57: INFO: Looking for file 'sailsw3.elf'
+15:04:57: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf')
+15:04:57: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:57: DEBUG: Trying get filesize, calling fseek()
+15:04:57: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf' (550464 bytes)
+15:04:57: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:04:57: DEBUG: Trying get filesize, calling fseek()
+15:04:57: DEBUG: File size is 550464 bytes
+15:04:57: DEBUG: NumSectors needed 135
+15:04:57: INFO: =======================================================
+15:04:57: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf'}
+15:04:57: INFO: {<program> (537.56 KB) 135 sectors needed at location 1000 on LUN 0}
+15:04:57: INFO: =======================================================
+
+15:04:57: DEBUG: CHANNEL DATA (P0009) (H00211) (    345 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw3.elf" label="SAIL_SW3" num_partition_sectors="135" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x3e8000" start_sector="1000" />
+</data>
+============================================================================================================
+
+15:04:57: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:57: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:04:57: DEBUG: CharsInBuffer = 103
+15:04:57: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:04:57: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:57: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:57: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:57: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:04:57: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:04:57: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:04:57: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:04:57: DEBUG: printBuffer:6107 
+
+
+15:04:57: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:57: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:04:57: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:04:57: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:04:57: DEBUG: CharsInBuffer = 93
+15:04:57: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:04:57: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:04:57: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:04:57: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:04:57: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:04:57: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:04:57: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:04:57: DEBUG: printBuffer:6107 
+
+
+15:04:57: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:04:57: DEBUG: Response was 'ACK'
+15:04:57: DEBUG: CHANNEL DATA (P0010) (H00212) (540.00 KB) - HOST TO TARGET -->
+15:04:57: INFO: Overall to target  0.031 seconds (17.01 MBps)
+15:04:57: INFO: {percent files transferred  49.49%}
+15:04:57: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:02: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:02: DEBUG: CharsInBuffer = 94
+15:05:02: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:02: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:02: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:02: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:02: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:02: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:02: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:02: DEBUG: printBuffer:6107 
+
+
+15:05:02: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:02: DEBUG: Response was 'ACK'
+15:05:02: INFO: 
+15:05:02: INFO: =======================================================
+15:05:02: INFO: ==================== {SUCCESS} ========================
+15:05:02: INFO: =======================================================
+
+
+15:05:02: INFO: {percent files transferred  49.49%}
+15:05:02: INFO: In handleProgram('sailhyp.elf')
+15:05:02: DEBUG: ==================================================================================
+15:05:02: DEBUG: ==================================================================================
+15:05:02: INFO: Looking for file 'sailhyp.elf'
+15:05:02: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf')
+15:05:02: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:05:02: DEBUG: Trying get filesize, calling fseek()
+15:05:02: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf' (758208 bytes)
+15:05:02: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf') with AccessMode='rb'
+15:05:02: DEBUG: Trying get filesize, calling fseek()
+15:05:02: DEBUG: File size is 758208 bytes
+15:05:02: DEBUG: NumSectors needed 186
+15:05:02: INFO: =======================================================
+15:05:02: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf'}
+15:05:02: INFO: {<program> (740.44 KB) 186 sectors needed at location 1781 on LUN 0}
+15:05:02: INFO: =======================================================
+
+15:05:02: DEBUG: CHANNEL DATA (P0011) (H00213) (    349 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailhyp.elf" label="SAIL_HYP_BKUP" num_partition_sectors="186" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="900.0" sparse="false" start_byte_hex="0x6f5000" start_sector="1781" />
+</data>
+============================================================================================================
+
+15:05:02: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:02: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:02: DEBUG: CharsInBuffer = 103
+15:05:02: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:02: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:02: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:02: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:02: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:02: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:02: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:02: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:02: DEBUG: printBuffer:6107 
+
+
+15:05:02: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:02: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:02: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:02: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:02: DEBUG: CharsInBuffer = 93
+15:05:02: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:02: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:02: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:02: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:02: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:02: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:02: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:02: DEBUG: printBuffer:6107 
+
+
+15:05:02: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:02: DEBUG: Response was 'ACK'
+15:05:02: DEBUG: CHANNEL DATA (P0012) (H00214) (744.00 KB) - HOST TO TARGET -->
+15:05:02: INFO: Overall to target  0.031 seconds (23.44 MBps)
+15:05:02: INFO: {percent files transferred  66.67%}
+15:05:02: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:08: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:08: DEBUG: CharsInBuffer = 94
+15:05:08: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:08: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:08: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:08: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:08: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:08: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:08: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:08: DEBUG: printBuffer:6107 
+
+
+15:05:08: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:08: DEBUG: Response was 'ACK'
+15:05:08: INFO: 
+15:05:08: INFO: =======================================================
+15:05:08: INFO: ==================== {SUCCESS} ========================
+15:05:08: INFO: =======================================================
+
+
+15:05:08: INFO: {percent files transferred  66.67%}
+15:05:08: INFO: In handleProgram('sailsw1.elf')
+15:05:08: DEBUG: ==================================================================================
+15:05:08: DEBUG: ==================================================================================
+15:05:08: INFO: Looking for file 'sailsw1.elf'
+15:05:08: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf')
+15:05:08: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:05:08: DEBUG: Trying get filesize, calling fseek()
+15:05:08: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf' (444608 bytes)
+15:05:08: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf') with AccessMode='rb'
+15:05:08: DEBUG: Trying get filesize, calling fseek()
+15:05:08: DEBUG: File size is 444608 bytes
+15:05:08: DEBUG: NumSectors needed 109
+15:05:08: INFO: =======================================================
+15:05:08: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf'}
+15:05:08: INFO: {<program> (434.19 KB) 109 sectors needed at location 2006 on LUN 0}
+15:05:08: INFO: =======================================================
+
+15:05:08: DEBUG: CHANNEL DATA (P0013) (H00215) (    350 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw1.elf" label="SAIL_SW1_BKUP" num_partition_sectors="109" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="1024.0" sparse="false" start_byte_hex="0x7d6000" start_sector="2006" />
+</data>
+============================================================================================================
+
+15:05:08: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:08: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:08: DEBUG: CharsInBuffer = 103
+15:05:08: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:08: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:08: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:08: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:08: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:08: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:08: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:08: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:08: DEBUG: printBuffer:6107 
+
+
+15:05:08: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:08: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:08: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:08: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:08: DEBUG: CharsInBuffer = 93
+15:05:08: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:08: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:08: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:08: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:08: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:08: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:08: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:08: DEBUG: printBuffer:6107 
+
+
+15:05:08: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:08: DEBUG: Response was 'ACK'
+15:05:08: DEBUG: CHANNEL DATA (P0014) (H00216) (436.00 KB) - HOST TO TARGET -->
+15:05:08: INFO: Overall to target  0.016 seconds (26.61 MBps)
+15:05:08: INFO: {percent files transferred  76.75%}
+15:05:08: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:12: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:12: DEBUG: CharsInBuffer = 94
+15:05:12: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:12: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:12: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:12: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:12: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:12: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:12: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:12: DEBUG: printBuffer:6107 
+
+
+15:05:12: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:12: DEBUG: Response was 'ACK'
+15:05:12: INFO: 
+15:05:12: INFO: =======================================================
+15:05:12: INFO: ==================== {SUCCESS} ========================
+15:05:12: INFO: =======================================================
+
+
+15:05:12: INFO: {percent files transferred  76.75%}
+15:05:12: INFO: In handleProgram('sailsw2.elf')
+15:05:12: DEBUG: ==================================================================================
+15:05:12: DEBUG: ==================================================================================
+15:05:12: INFO: Looking for file 'sailsw2.elf'
+15:05:12: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf')
+15:05:12: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:05:12: DEBUG: Trying get filesize, calling fseek()
+15:05:12: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf' (430592 bytes)
+15:05:12: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf') with AccessMode='rb'
+15:05:12: DEBUG: Trying get filesize, calling fseek()
+15:05:12: DEBUG: File size is 430592 bytes
+15:05:12: DEBUG: NumSectors needed 106
+15:05:12: INFO: =======================================================
+15:05:12: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf'}
+15:05:12: INFO: {<program> (420.50 KB) 106 sectors needed at location 2262 on LUN 0}
+15:05:12: INFO: =======================================================
+
+15:05:12: DEBUG: CHANNEL DATA (P0015) (H00217) (    350 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw2.elf" label="SAIL_SW2_BKUP" num_partition_sectors="106" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0x8d6000" start_sector="2262" />
+</data>
+============================================================================================================
+
+15:05:12: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:12: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:12: DEBUG: CharsInBuffer = 103
+15:05:12: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:12: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:12: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:12: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:12: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:12: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:12: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:12: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:12: DEBUG: printBuffer:6107 
+
+
+15:05:12: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:12: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:12: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:12: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:12: DEBUG: CharsInBuffer = 93
+15:05:12: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:12: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:12: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:12: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:12: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:12: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:12: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:12: DEBUG: printBuffer:6107 
+
+
+15:05:12: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:12: DEBUG: Response was 'ACK'
+15:05:12: DEBUG: CHANNEL DATA (P0016) (H00218) (424.00 KB) - HOST TO TARGET -->
+15:05:12: INFO: Overall to target  0.016 seconds (25.88 MBps)
+15:05:12: INFO: {percent files transferred  86.50%}
+15:05:12: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:16: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:16: DEBUG: CharsInBuffer = 94
+15:05:16: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:16: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:16: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:16: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:16: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:16: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:16: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:16: DEBUG: printBuffer:6107 
+
+
+15:05:16: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:16: DEBUG: Response was 'ACK'
+15:05:16: INFO: 
+15:05:16: INFO: =======================================================
+15:05:16: INFO: ==================== {SUCCESS} ========================
+15:05:16: INFO: =======================================================
+
+
+15:05:16: INFO: {percent files transferred  86.50%}
+15:05:16: INFO: In handleProgram('sailsw3.elf')
+15:05:16: DEBUG: ==================================================================================
+15:05:16: DEBUG: ==================================================================================
+15:05:16: INFO: Looking for file 'sailsw3.elf'
+15:05:16: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf')
+15:05:16: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:05:16: DEBUG: Trying get filesize, calling fseek()
+15:05:16: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf' (550464 bytes)
+15:05:16: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf') with AccessMode='rb'
+15:05:16: DEBUG: Trying get filesize, calling fseek()
+15:05:16: DEBUG: File size is 550464 bytes
+15:05:16: DEBUG: NumSectors needed 135
+15:05:16: INFO: =======================================================
+15:05:16: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf'}
+15:05:16: INFO: {<program> (537.56 KB) 135 sectors needed at location 2774 on LUN 0}
+15:05:16: INFO: =======================================================
+
+15:05:16: DEBUG: CHANNEL DATA (P0017) (H00219) (    350 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sailsw3.elf" label="SAIL_SW3_BKUP" num_partition_sectors="135" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="2048.0" sparse="false" start_byte_hex="0xad6000" start_sector="2774" />
+</data>
+============================================================================================================
+
+15:05:16: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:16: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:16: DEBUG: CharsInBuffer = 103
+15:05:16: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:16: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:16: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:16: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:16: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:16: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:16: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:16: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:16: DEBUG: printBuffer:6107 
+
+
+15:05:16: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:16: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:16: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:16: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:16: DEBUG: CharsInBuffer = 93
+15:05:16: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:16: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:16: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:16: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:16: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:16: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:16: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:16: DEBUG: printBuffer:6107 
+
+
+15:05:16: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:16: DEBUG: Response was 'ACK'
+15:05:16: DEBUG: CHANNEL DATA (P0018) (H00220) (540.00 KB) - HOST TO TARGET -->
+15:05:16: INFO: Overall to target  0.015 seconds (35.16 MBps)
+15:05:16: INFO: {percent files transferred  98.98%}
+15:05:16: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 94
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:20: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:20: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: DEBUG: Response was 'ACK'
+15:05:20: INFO: 
+15:05:20: INFO: =======================================================
+15:05:20: INFO: ==================== {SUCCESS} ========================
+15:05:20: INFO: =======================================================
+
+
+15:05:20: INFO: {percent files transferred  98.98%}
+15:05:20: INFO: In handleProgram('sail_nor_dlp.bin')
+15:05:20: DEBUG: ==================================================================================
+15:05:20: DEBUG: ==================================================================================
+15:05:20: INFO: Looking for file 'sail_nor_dlp.bin'
+15:05:20: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin')
+15:05:20: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:05:20: DEBUG: Trying get filesize, calling fseek()
+15:05:20: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin' (128 bytes)
+15:05:20: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin') with AccessMode='rb'
+15:05:20: DEBUG: Trying get filesize, calling fseek()
+15:05:20: DEBUG: File size is 128 bytes
+15:05:20: DEBUG: NumSectors needed 1
+15:05:20: INFO: =======================================================
+15:05:20: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin'}
+15:05:20: INFO: {<program> (128.00 B) 1 sectors needed at location 7214 on LUN 0}
+15:05:20: INFO: =======================================================
+
+15:05:20: DEBUG: CHANNEL DATA (P0019) (H00221) (    351 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="sail_nor_dlp.bin" label="SAIL_DLP_BKUP" num_partition_sectors="1" partofsingleimage="false" physical_partition_number="0" readbackverify="false" size_in_KB="4.0" sparse="false" start_byte_hex="0x1c2e000" start_sector="7214" />
+</data>
+============================================================================================================
+
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 103
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:20: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:20: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:20: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 93
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:20: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:20: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: DEBUG: Response was 'ACK'
+15:05:20: DEBUG: CHANNEL DATA (P0020) (H00222) (4.00 KB) - HOST TO TARGET -->
+15:05:20: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 94
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:20: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:20: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: DEBUG: Response was 'ACK'
+15:05:20: INFO: 
+15:05:20: INFO: =======================================================
+15:05:20: INFO: ==================== {SUCCESS} ========================
+15:05:20: INFO: =======================================================
+
+
+15:05:20: INFO: {percent files transferred  98.98%}
+15:05:20: INFO: In handleProgram('gpt_main0.bin')
+15:05:20: DEBUG: ==================================================================================
+15:05:20: DEBUG: ==================================================================================
+15:05:20: INFO: Looking for file 'gpt_main0.bin'
+15:05:20: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin')
+15:05:20: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin') with AccessMode='rb'
+15:05:20: DEBUG: Trying get filesize, calling fseek()
+15:05:20: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin' (24576 bytes)
+15:05:20: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin') with AccessMode='rb'
+15:05:20: DEBUG: Trying get filesize, calling fseek()
+15:05:20: DEBUG: File size is 24576 bytes
+15:05:20: DEBUG: NumSectors needed 6
+15:05:20: INFO: =======================================================
+15:05:20: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin'}
+15:05:20: INFO: {<program> (24.00 KB) 6 sectors needed at location 0 on LUN 0}
+15:05:20: INFO: =======================================================
+
+15:05:20: DEBUG: CHANNEL DATA (P0021) (H00223) (    336 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="gpt_main0.bin" label="PrimaryGPT" num_partition_sectors="6" partofsingleimage="true" physical_partition_number="0" readbackverify="false" size_in_KB="24.0" sparse="false" start_byte_hex="0x0" start_sector="0" />
+</data>
+============================================================================================================
+
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 103
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:20: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:20: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:20: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:20: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:20: DEBUG: CharsInBuffer = 93
+15:05:20: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:20: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:20: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:20: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:20: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:20: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:20: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:20: DEBUG: printBuffer:6107 
+
+
+15:05:20: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:20: DEBUG: Response was 'ACK'
+15:05:20: DEBUG: CHANNEL DATA (P0022) (H00224) (24.00 KB) - HOST TO TARGET -->
+15:05:20: INFO: Overall to target  0.015 seconds (1.56 MBps)
+15:05:20: INFO: {percent files transferred  99.54%}
+15:05:20: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:21: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:21: DEBUG: CharsInBuffer = 94
+15:05:21: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:21: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:21: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:21: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:21: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:21: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:21: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:21: DEBUG: printBuffer:6107 
+
+
+15:05:21: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:21: DEBUG: Response was 'ACK'
+15:05:21: INFO: 
+15:05:21: INFO: =======================================================
+15:05:21: INFO: ==================== {SUCCESS} ========================
+15:05:21: INFO: =======================================================
+
+
+15:05:21: INFO: {percent files transferred  99.54%}
+15:05:21: INFO: In handleProgram('gpt_backup0.bin')
+15:05:21: DEBUG: ==================================================================================
+15:05:21: DEBUG: ==================================================================================
+15:05:21: INFO: Looking for file 'gpt_backup0.bin'
+15:05:21: DEBUG: 1. Calling stat('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin')
+15:05:21: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin') with AccessMode='rb'
+15:05:21: DEBUG: Trying get filesize, calling fseek()
+15:05:21: DEBUG: Found 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin' (20480 bytes)
+15:05:21: DEBUG: 2. Calling fopen('C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin') with AccessMode='rb'
+15:05:21: DEBUG: Trying get filesize, calling fseek()
+15:05:21: DEBUG: File size is 20480 bytes
+15:05:21: DEBUG: NumSectors needed 5
+15:05:21: INFO: =======================================================
+15:05:21: INFO: {<program> FILE: 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin'}
+15:05:21: INFO: {<program> (20.00 KB) 5 sectors needed at location 0 on LUN 0}
+15:05:21: INFO: =======================================================
+
+15:05:21: DEBUG: CHANNEL DATA (P0023) (H00225) (    382 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program SECTOR_SIZE_IN_BYTES="4096" file_sector_offset="0" filename="gpt_backup0.bin" label="BackupGPT" num_partition_sectors="5" partofsingleimage="true" physical_partition_number="0" readbackverify="false" size_in_KB="20.0" sparse="false" start_byte_hex="(4096*NUM_DISK_SECTORS)-20480." start_sector="NUM_DISK_SECTORS-5." />
+</data>
+============================================================================================================
+
+15:05:21: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:21: DEBUG: CHANNEL DATA (103 bytes) <-- TARGET to HOST
+15:05:21: DEBUG: CharsInBuffer = 103
+15:05:21: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 103 bytes
+
+15:05:21: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:21: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:21: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:21: DEBUG: printBuffer:6094 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+15:05:21: DEBUG: printBuffer:6094 20 43 61 6C 6C 69 6E 67 20 68 61 6E 64 6C 65 72  Calling handler
+15:05:21: DEBUG: printBuffer:6094 20 66 6F 72 20 70 72 6F 67 72 61 6D 22 20 2F 3E  for program" />
+15:05:21: DEBUG: printBuffer:6094 3C 2F 64 61 74 61 3E                            </data>
+15:05:21: DEBUG: printBuffer:6107 
+
+
+15:05:21: DEBUG: XML FILE (103 bytes): CharsInBuffer=103-103=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: Calling handler for program" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:21: INFO: TARGET SAID: 'INFO: Calling handler for program'
+15:05:21: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:21: DEBUG: CHANNEL DATA (93 bytes) <-- TARGET to HOST
+15:05:21: DEBUG: CharsInBuffer = 93
+15:05:21: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 93 bytes
+
+15:05:21: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:21: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:21: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:21: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:21: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 74 72 ACK" rawmode="tr
+15:05:21: DEBUG: printBuffer:6094 75 65 22 20 2F 3E 3C 2F 64 61 74 61 3E          ue" /></data>
+15:05:21: DEBUG: printBuffer:6107 
+
+
+15:05:21: DEBUG: XML FILE (93 bytes): CharsInBuffer=93-93=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:21: DEBUG: Response was 'ACK'
+15:05:21: DEBUG: CHANNEL DATA (P0024) (H00226) (20.00 KB) - HOST TO TARGET -->
+15:05:21: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+15:05:21: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+15:05:21: DEBUG: CHANNEL DATA (94 bytes) <-- TARGET to HOST
+15:05:21: DEBUG: CharsInBuffer = 94
+15:05:21: DEBUG: printBuffer:6017 PRETTYPRINT Buffer is 94 bytes
+
+15:05:21: DEBUG: printBuffer:6094 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+15:05:21: DEBUG: printBuffer:6094 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+15:05:21: DEBUG: printBuffer:6094 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+15:05:21: DEBUG: printBuffer:6094 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+15:05:21: DEBUG: printBuffer:6094 41 43 4B 22 20 72 61 77 6D 6F 64 65 3D 22 66 61 ACK" rawmode="fa
+15:05:21: DEBUG: printBuffer:6094 6C 73 65 22 20 2F 3E 3C 2F 64 61 74 61 3E       lse" /></data>
+15:05:21: DEBUG: printBuffer:6107 
+
+
+15:05:21: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" /></data>
+-------------------------------------------------------------------------------------------
+
+15:05:21: DEBUG: Response was 'ACK'
+15:05:21: INFO: 
+15:05:21: INFO: =======================================================
+15:05:21: INFO: ==================== {SUCCESS} ========================
+15:05:21: INFO: =======================================================
+
+
+15:05:21: INFO: {percent files transferred 100.00%}
+15:05:21: INFO: ==============================================================
+15:05:21: INFO: Files used and their paths
+15:05:21: INFO:   1 'C:\Users\CHP00015\Desktop\auto_flash\auto_project\port_trace.txt'
+15:05:21: INFO:   2 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\rawprogram0.xml'
+15:05:21: INFO:   3 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sail_nor_dlp.bin'
+15:05:21: INFO:   4 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailhyp.elf'
+15:05:21: INFO:   5 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw1.elf'
+15:05:21: INFO:   6 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw2.elf'
+15:05:21: INFO:   7 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\sailsw3.elf'
+15:05:21: INFO:   8 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_main0.bin'
+15:05:21: INFO:   9 'C:\Users\CHP00015\Desktop\Image new one\RELEASE_IMAGES\2025-04-28_21_25\sail_nor\gpt_backup0.bin'
+15:05:21: INFO:      _             (done)
+15:05:21: INFO:     | |                 
+15:05:21: INFO:   __| | ___  _ __   ___ 
+15:05:21: INFO:  / _` |/ _ \| '_ \ / _ \
+15:05:21: INFO: | (_| | (_) | | | |  __/
+15:05:21: INFO:  \__,_|\___/|_| |_|\___|
+15:05:21: INFO: {All Finished Successfully}
+
+15:05:21: INFO: Overall to target 37.171 seconds (115.94 KBps)
+15:05:21: INFO: {percent files transferred 100.00%}
