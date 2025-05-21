@@ -13,9 +13,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BAT_FILE = os.path.normpath(os.path.join(
     SCRIPT_DIR,
     "..",
-    "download",
-    "downloads",
-    "RELEASE_IMAGES",
+    "utils",
     "RELEASE_IMAGES",
     "2025-04-28_21_25",
     "fastboot_nscdc_high_blank_flash.bat"
