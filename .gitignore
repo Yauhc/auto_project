@@ -1,17 +1,26 @@
-# 忽略虚拟环境
+# Ignore virtual environments
 edl-env/
 venv/
 
-# 忽略大文件
-*.exe
+# Ignore large files
 *.zip
 *.pyd
 
-# IDE 配置文件
+# IDE configuration files
 .idea/
 .vscode/
 
-# Python 缓存
+# Python cache files
 __pycache__/
 *.pyc
-utils/RELEASE_IMAGES/
+port_trace.txt
+
+# Ignore utils
+utils/downloads
+utils/extracted
+utils/QPST
+utils/Renesas Flash Programmer V3.19
+
+
+# Ignore config files
+config.ini
