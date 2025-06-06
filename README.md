@@ -37,6 +37,8 @@ user = your_artifactory_username
 
 access_token = your_artifactory_token
 
+jfrog_cli_download_url = your_jfrog_cli_download_url
+
 
 4.Prepare QPST Tool
 

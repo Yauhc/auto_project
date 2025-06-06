@@ -210,7 +210,7 @@ def run_fastboot_flash(abs_images_path):
     """
     if trigger_fastboot():
         print("[INFO] Fastboot mode triggered.")
-        time.sleep(2)
+        time.sleep(5)
         if check_fastboot_device():
             print("[INFO] Fastboot device verified.")
             if run_flash_script(abs_images_path):

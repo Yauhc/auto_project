@@ -60,18 +60,29 @@ def download_and_extract():
     print("Downloading files from file management website...")
     
     try:
-        # Call download script
-        print("=== Starting download phase ===")
-        download_script_path = os.path.join(os.path.dirname(__file__), 'download', 'download_image_files.py')
         
+        print("=== Starting download phase ===")
+        # Call setup script to configure JFrog CLI
+        download_script_path = os.path.join(os.path.dirname(__file__), 'download', 'setup_jfrog.py')
         if not os.path.exists(download_script_path):
             print(f"Download script not found: {download_script_path}")
             return None
-            
         # Run download script
         result = subprocess.run([sys.executable, download_script_path], 
                               capture_output=False, text=True)
+        if result.returncode != 0:
+            print("Error occurred during download process")
+            return None
+
         
+        # Call download script
+        download_script_path = os.path.join(os.path.dirname(__file__), 'download', 'download_by_version.py')
+        if not os.path.exists(download_script_path):
+            print(f"Download script not found: {download_script_path}")
+            return None
+        # Run download script
+        result = subprocess.run([sys.executable, download_script_path], 
+                              capture_output=False, text=True)
         if result.returncode != 0:
             print("Error occurred during download process")
             return None
@@ -134,7 +145,7 @@ def flash_mcu_component(component_name, script_path, images_path):
 def show_firmware_selection():
     print("\n=== Firmware Selection ===")
     while True:
-        print("1. Download files via version number and date")
+        print("1. Download files via version number")
         print("2. Use existing config.ini settings")
         print("Type 'exit' to quit")
         choice = input("Select (1/2): ").strip().lower()

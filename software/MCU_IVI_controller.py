@@ -51,7 +51,7 @@ def main(images_path=None):
         f'"{rfp_path}" '
         '-d RH850 -tool E2 -if uart -osc 8.0 '
         '-fo opbt FA27FFCF,FFFFFDFF,FFFFFFFF,FFFFFFFF,FFFFFFFF,FFFFFFFF,FFFFFFFF,FFFFFFFF '
-        '-e -p -v -fill code '
+        '-e -p -v '
         f'-file "{image_abs_path}" '
         '-reset'
     )
