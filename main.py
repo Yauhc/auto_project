@@ -210,7 +210,10 @@ def main():
                 print("Waiting for device to stabilize...")
                 time.sleep(5) 
                 print("Starting fastboot flash...")
-                run_fastboot_flash(abs_images_path) 
+                if not run_fastboot_flash(abs_images_path):
+                    print("[ERROR] Fastboot flash failed, please check connection and try again.")
+                    print("Please connect device in NORMAL mode to continue...")
+                    continue
                 print("Fastboot flashing completed successfully")
                 break
             except Exception as e:
