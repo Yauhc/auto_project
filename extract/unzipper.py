@@ -1,6 +1,7 @@
 import os
 import zipfile
 import tarfile
+import shutil
 from collections import defaultdict
 
 # Relative paths
@@ -45,7 +46,22 @@ def merge_files(file_parts, output_file):
 
     return output_file
 
+def clear_extract_dir(extract_dir):
+    if os.path.exists(extract_dir):
+        for item in os.listdir(extract_dir):
+            item_path = os.path.join(extract_dir, item)
+            if os.path.isdir(item_path):
+                shutil.rmtree(item_path)
+            else:
+                os.remove(item_path)
+        print(f"Cleared all contents of {extract_dir}")
+    else:
+        os.makedirs(extract_dir)
+        print(f"Created extract directory: {extract_dir}")
+
 def find_and_process_all(download_dir, extract_dir):
+    clear_extract_dir(extract_dir)
+
     merged_tar_groups = defaultdict(list)
 
     for file in os.listdir(download_dir):

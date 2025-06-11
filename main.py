@@ -161,6 +161,12 @@ def show_firmware_selection():
         else:
             print("Invalid input. Enter 1, 2, or 'exit'.")
 
+def find_folder(root_path, target_folder_name):
+    for dirpath, dirnames, _ in os.walk(root_path):
+        if target_folder_name in dirnames:
+            return os.path.join(dirpath, target_folder_name)
+    return None
+
 def main():
     print("=== Firmware Flashing Tool ===")
     images_path = show_firmware_selection()
@@ -171,28 +177,50 @@ def main():
     abs_images_path = get_absolute_path(images_path)
     print(f"\nUsing images path: {images_path} -> {abs_images_path}")
 
+    
+    # === Check for sail_nor directory ===
+    sail_nor_path = find_folder(abs_images_path, 'sail_nor')
+    if  not sail_nor_path:
+        print(f"[ERROR] Required folder 'sail_nor' not found in: {abs_images_path}")
+        print("Please ensure that the images_path in the configuration file is correctly set to the path of the image files.")
+        sys.exit(1)
+
+    if not os.listdir(sail_nor_path):
+        print("[INFO] 'sail_nor' folder is empty,identified as KOH image file.")
+        skip_qfil = True
+    else:
+        print("[INFO] Identified as IRI image file.")
+        skip_qfil = False
+
+
 
     # QFIL
-    print("\n" + "="*50)
-    print("Starting QFIL Flashing Phase")
-    print("="*50)
-    print("Please connect device in EDL mode (DLOAD) to continue...")
-    while True:
-        port, is_edl_mode = find_qualcomm_device()
-        if port and is_edl_mode:
-            print(f"Device detected (Port: {port}, Mode: DLOAD)")
-            try:
-                print("Starting QFIL flashing...")
-                print("Waiting for device to stabilize...")
-                time.sleep(5)
-                print("Running QFIL controller script...")
-                run_qfil_controller(abs_images_path)
-                print("QFIL flashing completed successfully")
-                break
+    if not skip_qfil:
+        print("\n" + "="*50)
+        print("Starting QFIL Flashing Phase")
+        print("="*50)
+        print("Please connect device in EDL mode (DLOAD) to continue...")
+        while True:
+            port, is_edl_mode = find_qualcomm_device()
+            if port and is_edl_mode:
+                print(f"Device detected (Port: {port}, Mode: DLOAD)")
+                try:
+                    print("Starting QFIL flashing...")
+                    print("Waiting for device to stabilize...")
+                    time.sleep(5)
+                    print("Running QFIL controller script...")
+                    if not run_qfil_controller(abs_images_path):
+                        print("[ERROR] QFIL flashing failed, please check connection and try again.")
+                        print("Please connect device in EDL mode to continue...")
+                        continue
+                    print("QFIL flashing completed successfully")
+                    break
+                except Exception as e:
+                    print(f"[ERROR] Error during execution: {e}")
+                    continue
+    else:
+        print("\n[INFO] Skipping QFIL flashing phase because 'sail_nor' folder is empty.")
 
-            except Exception as e:
-                print(f"[ERROR] Error during execution: {e}")
-                continue
 
 
     # Fastboot and run fastboot script

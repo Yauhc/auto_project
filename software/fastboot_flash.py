@@ -133,20 +133,25 @@ def check_fastboot_device():
 
 
 def get_bat_file_path(abs_images_path):
-    """Search for the absolute path of the fastboot flash script"""
-    target_file = "fastboot_nscdc_high_blank_flash.bat"
+    """Search for the absolute path of a valid fastboot flash script"""
+    target_files = [
+        "fastboot_nscdc_high_blank_flash.bat",
+        "fastboot_nscdc_std_blank_flash.bat"
+    ]
+
     if not os.path.exists(abs_images_path):
         print(f"[ERROR] Given path does not exist: {abs_images_path}")
         return None
 
     for root, _, files in os.walk(abs_images_path):
-        if target_file in files:
-            bat_file = os.path.join(root, target_file)
-            print(f"[INFO] Found flash script: {bat_file}")
-            return bat_file
+        for target_file in target_files:
+            if target_file in files:
+                bat_file = os.path.join(root, target_file)
+                print(f"[INFO] Found flash script: {bat_file}")
+                return bat_file
+
     print("[ERROR] Flash script not found.")
     return None
-
 
 def run_flash_script(abs_images_path):
     """Execute the flash bat script and print progress in real-time"""
