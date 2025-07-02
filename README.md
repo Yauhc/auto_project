@@ -73,11 +73,23 @@ Run Renesas_Flash_Programmer_Package_V31900.exe to install the tool.
 
 After installation, locate the folder named Renesas Flash Programmer V3.19 and copy it into the utils folder inside your project directory.
 
-5.Start the Script
+5. Start the Script
 
-Once everything is ready, run the main program:
+Once everything is ready, run the main program with desired start point:
 
+```bash
+# Start from the beginning (download + full flashing process)
 python main.py
+
+# Start from QFIL step
+python main.py --start-from qfil
+
+# Start from Fastboot step
+python main.py --start-from fastboot
+
+# Start from MCU flashing only
+python main.py --start-from mcu
+
 
 
 
