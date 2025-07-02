@@ -7,18 +7,19 @@ The core idea of this project is to automate the firmware flashing process throu
 # User Guide
 ## 1.Install Python
 Make sure Python 3.10.9 is installed on your system. You can download it from the official Python website:
-
 https://www.python.org/downloads/release/python-3109/
 
 ## 2.Install Dependencies
 Open a terminal and install the required Python libraries:
 
+```bash
 pip install -r requirements.txt
+```
 
 ## 3.Configure Settings
 Edit the config.ini file in the root directory and fill in your Artifactory credentials:
 
-```bash
+```ini
 [artifactory]
 
 user = your_artifactory_username
