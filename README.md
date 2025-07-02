@@ -11,14 +11,12 @@ https://www.python.org/downloads/release/python-3109/
 
 ## 2.Install Dependencies
 Open a terminal and install the required Python libraries:
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ## 3.Configure Settings
 Edit the config.ini file in the root directory and fill in your Artifactory credentials:
-
 ```ini
 [artifactory]
 
@@ -74,7 +72,6 @@ After installation, locate the folder named Renesas Flash Programmer V3.19 and c
 
 ## 6. Start the Script
 Once everything is ready, run the main program with desired start point:
-
 ```bash
 # Start from the beginning
 python main.py
@@ -87,17 +84,10 @@ python main.py --start-from mcu
 ```
 
 # Notes
-
 Follow prompts to ensure the device is in the correct mode.
-
 The MCU boards must be properly connected and powered on (important).
-
 When using the auto-download feature:
-
 Make sure you have edited the contents in the Artifactory section.
-
 All extracted files will be saved to [images]image_save_path.
-
 In some cases, image files may be downloaded as empty files due to proxy or connectivity issues. If such a case occurs, please delete the affected file manually, verify your proxy or network configuration, and re-initiate the download.
-
 If any control script fails, the console will display [RESULT] FAIL, and a retry prompt will be shown.
