@@ -44,13 +44,9 @@ Go to the following website:
 
 https://qpsttool.com/qpst-tool-v2-7-496#google_vignette
 
-Download the QPST tool from the page.
+Download the QPST tool from the page.After downloading, extract the archive.
 
-After downloading, extract the archive.
-
-Run QPST.2.7.496.1.exe to install the tool. It will be installed by default to:
-
-C:\Program Files (x86)\Qualcomm
+Run QPST.2.7.496.1.exe to install the tool. It will be installed by default to:C:\Program Files (x86)\Qualcomm
 
 After installation, go to the folder above and copy the QPST folder into the utils folder inside your project directory.
 
@@ -60,9 +56,7 @@ Go to the following website:
 
 https://www.renesas.com/ja/software-tool/renesas-flash-programmer-programming-gui#downloads
 
-Find the section titled:
-
-ソフトウェア／ツール－評価版ソフトウェア Renesas Flash Programmer V3.19.00 Windows
+Find the section titled:ソフトウェア／ツール－評価版ソフトウェア Renesas Flash Programmer V3.19.00 Windows
 
 Download the installer and extract it.
 
@@ -85,9 +79,15 @@ python main.py --start-from mcu
 
 # Notes
 Follow prompts to ensure the device is in the correct mode.
+
 The MCU boards must be properly connected and powered on (important).
+
 When using the auto-download feature:
+
 Make sure you have edited the contents in the Artifactory section.
+
 All extracted files will be saved to [images]image_save_path.
+
 In some cases, image files may be downloaded as empty files due to proxy or connectivity issues. If such a case occurs, please delete the affected file manually, verify your proxy or network configuration, and re-initiate the download.
+
 If any control script fails, the console will display [RESULT] FAIL, and a retry prompt will be shown.
