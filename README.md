@@ -90,9 +90,6 @@ python main.py --start-from fastboot
 # Start from MCU flashing only
 python main.py --start-from mcu
 
-
-
-
 Notes
 
 Follow prompts to ensure the device is in the correct mode.
