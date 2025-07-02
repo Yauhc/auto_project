@@ -8,7 +8,6 @@ Implementation Overview
 The core idea of this project is to automate the firmware flashing process through a modular design, minimizing user operations. Main features include: configuration management, flexible firmware acquisition methods, device detection, flashing workflow execution, using the QFIL tool to flash the main firmware, setting device boot mode via serial communication, flashing MCU (Meter/IVI) firmware, retry mechanism for each failed step, and log output.
 
 
-
 User Guide
 
 
